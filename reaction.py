@@ -26,10 +26,12 @@ print("\nLED is off! Press the button quickly!")
 # Wait for button press and determine winner
 while True:
     if left_button.value() == 0:
-        reaction_time = round((time() - led_off_time) * 1000, 1)  # 新增：计算反应时间
+        reaction_time = round((time() - led_off_time) * 1000, 1)
         print(f"\n🎉 {left_name} won the game!")
+        print(f"Reaction time: {reaction_time} ms")  # 新增这行
         sys.exit()
     if right_button.value() == 0:
-        reaction_time = round((time() - led_off_time) * 1000, 1)  # 新增：计算反应时间
+        reaction_time = round((time() - led_off_time) * 1000, 1)
         print(f"\n🎉 {right_name} won the game!")
+        print(f"Reaction time: {reaction_time} ms")  # 新增这行
         sys.exit()
