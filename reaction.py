@@ -1,10 +1,11 @@
 from machine import Pin
 from time import sleep
+from random import uniform  # 新增这行
 
 # Initialize LED
 led = Pin(4, Pin.OUT)
 
-# Test LED: on for 5 seconds then off
+# Test LED: random delay between 5-10 seconds
 led.value(1)
-sleep(5)
+sleep(uniform(5, 10))  # 修改这行
 led.value(0)
