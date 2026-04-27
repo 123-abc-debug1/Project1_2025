@@ -1,9 +1,9 @@
-
-# Add reaction time feature
+# Add reaction time calculation feature
 from machine import Pin
 from time import sleep, time
 from random import uniform
 import sys
+...
 
 # Initialize components (pin definitions match the assignment PDF exactly)
 led = Pin(4, Pin.OUT)
