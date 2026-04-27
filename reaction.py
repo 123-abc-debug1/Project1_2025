@@ -37,3 +37,4 @@ while True:
         print(f"\n🎉 {right_name} won the game!")
         print(f"Reaction time: {reaction_time} ms")
         sys.exit()
+# Fix button detection bug
