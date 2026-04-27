@@ -1,3 +1,5 @@
+
+# Add reaction time feature
 from machine import Pin
 from time import sleep, time
 from random import uniform
